@@ -24,7 +24,7 @@ import Moment from 'react-moment';
   render() {
     const { track, lyrics} = this.state;
     if (track === undefined || lyrics === undefined || Object.keys(track).length === 0 || Object.keys(lyrics).length === 0) {
-        return <Spinner />
+        return <Spinner/>
     } else {
         return (
             <React.Fragment>
@@ -49,7 +49,7 @@ import Moment from 'react-moment';
                         <strong>Explicit Words</strong>: {track.explicit === 0 ? 'No' : 'Yes'}
                     </li>
                     <li className = "list-group-item">
-                        < strong > Release Date < /strong>: <Moment format="DD/MM/YYYY">{track.first_release_date}</Moment >
+                        < strong > Release Date </strong>: <Moment format="DD/MM/YYYY">{track.first_release_date}</Moment >
                     </li>
                 </ul>
             </React.Fragment>
